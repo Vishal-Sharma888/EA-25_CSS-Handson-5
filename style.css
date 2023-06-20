@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-size: cover;
+  background-image: url(./shara\ desert.jpg);
+}
+.container1 {
+  justify-content: space-around;
+  display: flex;
+}
+.navbar {
+  padding-left: 0;
+  display: flex;
+}
+.navbar ul li {
+  color: white;
+  cursor: pointer;
+  list-style: none;
+  margin: 0px 30px;
+  display: inline;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+.hamberger {
+  position: relative;
+}
+.p {
+  padding-top: 80px;
+  padding-left: 40px;
+}
+h1 {
+  padding-bottom: -120px;
+  font-size: 40px;
+}
+.parent-container {
+  color: white;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  height: 35px;
+  border-radius: 20px;
+  width: 130px;
+}
+
+.container2 {
+  gap: 20px;
+  padding-right: 20px;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 200px 200px;
+}
+.box {
+  border-radius: 20px;
+  height: 200px;
+  border: 2px solid grey;
+  box-shadow: 2px 6px 10px white;
+}
+.box1 {
+  background-position: center;
+  transition-duration: 1s;
+  cursor: pointer;
+  background-image: url(./pic-1.png);
+  background-size: cover;
+}
+.box1:hover {
+  transform: translateY(-10px);
+}
+.box2 {
+  background-position: center;
+  transition-duration: 1s;
+  cursor: pointer;
+  background-image: url(./pic-2.png);
+  background-size: cover;
+}
+.box2:hover {
+  transform: translateY(-10px);
+}
+.box3 {
+  background-position: center;
+  transition-duration: 1s;
+  cursor: pointer;
+  background-image: url(./pic-3.png);
+  background-size: cover;
+}
+.box3:hover {
+  transform: translateY(-10px);
+}
+.box4 {
+  transition-duration: 1s;
+  cursor: pointer;
+  background-position: center;
+  background-image: url(./pic-4.png);
+  background-size: cover;
+}
+h3 {
+  display: flex;
+  justify-content: center;
+}
+.box4:hover {
+  transform: translateY(-10px);
+}
+/* media query for mobile */
+@media screen and (min-width: 250px) and (max-width: 900px) {
+  .parent-container {
+    flex-direction: column;
+    margin: 0;
+    padding-left: 0;
+  }
+  .container2 {
+    grid-template-columns: 400px;
+    padding-left: 0px;
+  }
+}
+
+/* media query for Tab */
+@media screen and (min-width: 500px) and (max-width: 900px) {
+  .parent-container {
+    flex-direction: column;
+    margin: 0;
+    padding-left: 0;
+  }
+  .container2 {
+    grid-template-columns: 400px;
+    padding-left: 0px;
+  }
+}
