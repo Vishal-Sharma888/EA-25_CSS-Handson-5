@@ -10,10 +10,12 @@ body {
 .container1 {
   display: flex;
   justify-content: space-around;
+  padding-top: 20px;
 }
 .navbar {
   padding-left: 0;
   display: flex;
+  top: 20px;
 }
 .navbar ul li {
   color: white;
@@ -48,6 +50,7 @@ button {
   height: 35px;
   border-radius: 20px;
   width: 130px;
+  margin-top: 20px;
 }
 
 .container2 {
@@ -137,7 +140,7 @@ ul{
 }
 .hamberger{
   position: relative;
-    right: 19px;
+    padding-left: 30px;
 }
 .p{
   margin-top: -81px;
