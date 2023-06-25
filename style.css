@@ -8,8 +8,8 @@ body {
   background-image: url(./shara\ desert.jpg);
 }
 .container1 {
-  justify-content: space-around;
   display: flex;
+  justify-content: space-around;
 }
 .navbar {
   padding-left: 0;
@@ -108,18 +108,46 @@ h3 {
   transform: translateY(-10px);
 }
 /* media query for mobile */
-@media screen and (min-width: 250px) and (max-width: 900px) {
-  .parent-container {
-    flex-direction: column;
-    margin: 0;
-    padding-left: 0;
+@media screen and (min-width:250px) and (max-width:500px){
+  .parent-container{
+      width: 100%;
+      flex-direction:column;
+      padding-left: 0;
+      margin: 0;
   }
-  .container2 {
-    grid-template-columns: 400px;
-    padding-left: 0px;
+  .box{
+    border-radius: 20px;
+    height: 30vh;
+    width: 100%;
+    margin-left: 113px;
+    margin-top: 5px;
+    border: 2px solid grey;
+    box-shadow: 2px 6px 10px white;
+  }
+  .container2{
+  
+    padding-right: 30px; 
+    grid-template-columns: 200px;
+    margin-right: 200px;
   }
 }
-
+ul{
+  position: relative;
+  left: 36px;
+}
+.hamberger{
+  position: relative;
+    right: 19px;
+}
+.p{
+  margin-top: -81px;
+  margin-left: -32px;
+}
+.logo{
+  position: relative;
+    top: 5px;
+    left: 5px;
+}
 /* media query for Tab */
 @media screen and (min-width: 500px) and (max-width: 900px) {
   .parent-container {
@@ -130,5 +158,6 @@ h3 {
   .container2 {
     grid-template-columns: 400px;
     padding-left: 0px;
+    width: 200px;
   }
 }
